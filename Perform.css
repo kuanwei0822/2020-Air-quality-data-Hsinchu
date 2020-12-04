@@ -1,0 +1,132 @@
+/* CSS字型: font-family: 'Noto Sans TC', sans-serif; -->	 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+
+*{
+	color:#fff;
+}
+.page{
+	background:#555;
+}
+.page .wrap{
+	height:100vh;
+	position:relative;
+}
+.page .wrap .content{
+	height:300px;
+	/* height 最後微調 */
+	width:300px;
+	padding:20px;
+	background:#111;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin:auto;
+}
+/* 檢測地區 location */
+.location{
+	height:45px;
+	margin-bottom:20px;
+}
+.location h3{
+	line-height:45px;
+	font-size:40px;
+	vertical-align:middle;
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#fff;
+}
+
+/* 現在時間 nowTime */
+.nowTime{
+	height:20px;
+	margin-bottom:20px;
+}
+.nowTime h4{
+	display:inline-block;
+	line-height:20px;
+	font-size:15px;
+	vertical-align:middle;
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#fff;
+}
+.nowTime .now_time{
+	display:inline-block;
+	line-height:20px;
+	font-size:15px;
+	vertical-align:middle;
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#fff;
+}
+
+
+/* 顯示空氣品質資料 dataDisplay */
+.dataDisplay{
+	height:150px;
+	margin-bottom:20px;
+	display:flex;
+}
+.dataDisplay .data_type{
+	width:100px;
+	margin-right:50px;
+	flex-grow:1;
+}
+.dataDisplay .data_type ul{
+	
+}
+.dataDisplay .data_type ul li{
+	height:22px;
+	width:60px;
+	padding: 0 10px 0;
+	margin-bottom:3px;
+	line-height:22px;
+	font-size:17px;
+	vertical-align:middle;
+	text-align:center;
+	background:#666;
+}
+.dataDisplay .data_type ul li:hover{
+	cursor:pointer;
+}
+.dataDisplay .data_show{
+	width:150px;
+	flex-grow:0;
+	background:#666;
+	position:relative;
+}
+.data_show .show_img{
+	width:100%;
+}
+.data_show .show_text{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.data_show .show_text div{
+	height:20px;
+	line-height:20px;
+	font-size:15px;
+	vertical-align:middle;
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#fff;
+}
+/* 更新資料時間 checkTime */
+.checkTime{
+	height:20px;
+}
+.checkTime h4{
+	display:inline-block;
+	line-height:20px;
+	font-size:15px;
+	vertical-align:middle;
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#fff;
+}
+.checkTime .check_time{
+	display:inline-block;
+	line-height:20px;
+	font-size:15px;
+	vertical-align:middle;
+	font-family: 'Noto Sans TC', sans-serif;
+	color:#fff;
+}

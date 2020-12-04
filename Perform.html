@@ -4,48 +4,46 @@
 		<title>新竹空氣品質即時監測</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+		<!-- 網頁樣式 -->
 		<link rel="stylesheet" href="Perform.css">
-		
+		<!-- CSS reset -->
 		<link rel="stylesheet" href="Resource/reset.css">
 	</head>
 	<body>
-		<div class="wrap">
-			<div class="content">
-				<div class="location">
-					<h3>新竹市</h3>
-				</div>
-				<div class="nowTime">
-					<h4>現在時間：</h4>
-					<div class="now_time"></div>
-				</div>
-				<div class="dataDisplay">
-					<div class="data_type">
-						<table>
-							<tr>
-								<td>PM2.5</td>
-								<td>CO</td>
-							</tr>
-							<tr>
-								<td>PM10</td>
-								<td>NO2</td>
-							</tr>
-							<tr>
-								<td>SO2</td>
-								<td>O3</td>
-							</tr>
-						</table>
+		<div class="page">
+			<div class="wrap">
+				<div class="content">
+					<div class="location">
+						<h3>新竹市</h3>
 					</div>
-					<div class="data_show">
-						<div class="show_img">
+					<div class="nowTime">
+						<h4>現在時間：</h4>
+						<div class="now_time">2020-12-04 16:00</div>
+					</div>
+					<div class="dataDisplay">
+						<div class="data_type">
+							<ul>
+								<li>PM2.5</li>
+								<li>PM10</li>
+								<li>SO2</li>
+								<li>NO2</li>
+								<li>CO</li>
+								<li>O3</li>
+							</ul>
 						</div>
-						<div class="show_level">
+						<div class="data_show">
+							<div class="show_img">
+							</div>
+							<div class="show_text">
+								<div class="concentration">濃度：200ppm</div>
+								<div class="quality">空氣品質：優</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="checkTime">
-					<h4>更新資料時間：</h4>
-					<div class="check_time"></div>
+					<div class="checkTime">
+						<h4>更新資料時間：</h4>
+						<div class="check_time">2020-12-04 16:00</div>
+					</div>
 				</div>
 			</div>
 		</div>
