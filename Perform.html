@@ -4,10 +4,14 @@
 		<title>新竹空氣品質即時監測</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- 網頁樣式 -->
-		<link rel="stylesheet" href="Perform.css">
 		<!-- CSS reset -->
 		<link rel="stylesheet" href="Resource/reset.css">
+		<!-- 網頁樣式 -->
+		<link rel="stylesheet" href="Perform.css">
+		<!-- jQuery CDN 引入 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- js檔案 -->
+		<script src="Perform.js"></script>
 	</head>
 	<body>
 		<div class="page">
@@ -18,7 +22,7 @@
 					</div>
 					<div class="nowTime">
 						<h4>現在時間：</h4>
-						<div class="now_time">2020-12-04 16:00</div>
+						<div class="now_time"></div>
 					</div>
 					<div class="dataDisplay">
 						<div class="data_type">
@@ -33,17 +37,17 @@
 						</div>
 						<div class="data_show">
 							<div class="show_img">
-								<img src="Resource/level_1.png">
+								<img src="Resource/level_1.png" id="img_level">
 							</div>
 							<div class="show_text">
-								<div class="concentration">濃度：200ppm</div>
-								<div class="quality">空氣品質：普通</div>
+								<div class="concentration">濃度：<span id="concentration_val"></span> <span id="concentration_unit"></span></div>
+								<div class="quality">空氣品質：<span id="quality_val"></span></div>
 							</div>
 						</div>
 					</div>
 					<div class="checkTime">
-						<h4>更新資料時間：</h4>
-						<div class="check_time">2020-12-04 16:00</div>
+						<h4>資料更新時間：</h4>
+						<div class="check_time"></div>
 					</div>
 				</div>
 			</div>
